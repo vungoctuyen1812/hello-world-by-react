@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header'
-import Products from './components/Products'
+import Header from './Components/Header'
+import Products from './Components/Products'
+import Person from './Person/Person'
 
 class Demo extends Component{
 render() {
@@ -8,13 +9,19 @@ render() {
             <div>
                 <Header />
                 	<div className="row">
-                		<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                		<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 			<Products />
                 		</div>
-                		<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                		<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 			<Products />
                 		</div>
+                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <Products />
+                        </div>
                 	</div>
+                <Person />  
+                <Person />
+                <Person />  
             </div>
         );
     }
